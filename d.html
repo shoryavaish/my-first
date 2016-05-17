@@ -4,7 +4,7 @@
 <title>Angular Filter API</title>
 </head>
 <body >
-<div data-ng-controller="SimpleController">
+<div data-ng-controller="simpleController">
 Name: <br><input type="text" data-ng-model="name" />
 <ul>
 <li data-ng-repeat="cust in customers|filter:name|orderBy:'city' " >{{cust.name}} -- {{ cust.city}} </li>
@@ -12,7 +12,7 @@ Name: <br><input type="text" data-ng-model="name" />
 </div>
 <script src="angular.min.js"></script>
 <script>
-function SimpleController($scope)
+function simpleController($scope)
 {
 $scope.customers=[
 				{name:'John Smith',city:'Pheonix'},
