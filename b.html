@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+<title>ng-repeat</title>
+</head>
+<body data-ng-init= "names=['abc','kbc','shinnoy']">
+<div class="container" >
+<h3> ng-repeat directive</h3>
+<ul>
+<li data-ng-repeat="Personame in names " > {{Personame}} </li>
+</ul>
+</div>
+Name: <br><input type="text" data-ng-model="name" /> {{name}}
+<script src="angular.min.js"></script>
+</body>
+</html>

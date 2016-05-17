@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+<title>Angular Filter API</title>
+</head>
+<body >
+<div data-ng-controller="SimpleController">
+Name: <br><input type="text" data-ng-model="name" />
+<ul>
+<li data-ng-repeat="cust in customers|filter:name|orderBy:'city' " >{{cust.name}} -- {{ cust.city}} </li>
+</ul>
+</div>
+<script src="angular.min.js"></script>
+<script>
+function SimpleController($scope)
+{
+$scope.customers=[
+				{name:'John Smith',city:'Pheonix'},
+				{name:'John Doe',city:'San Francisco'},
+				{name:'Jane Dan',city:'New York'}
+				];
+}
+</script>
+
+</body>
+</html>
