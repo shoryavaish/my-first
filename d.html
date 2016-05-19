@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="">
+<html data-ng-app="demoapp">
 <head>
 <title>Angular Filter API</title>
 </head>
@@ -12,14 +12,15 @@ Name: <br><input type="text" data-ng-model="name" />
 </div>
 <script src="angular.min.js"></script>
 <script>
-function simpleController($scope)
-{
+var demoapp = angular.module('demoapp',[] );
+demoapp.config("simpleController", function ($scope){
 $scope.customers=[
 				{name:'John Smith',city:'Pheonix'},
 				{name:'John Doe',city:'San Francisco'},
 				{name:'Jane Dan',city:'New York'}
 				];
-}
+});
+
 </script>
 
 </body>
