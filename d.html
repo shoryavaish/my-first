@@ -13,7 +13,7 @@ Name: <br><input type="text" data-ng-model="name" />
 <script src="angular.min.js"></script>
 <script>
 var demoapp = angular.module('demoapp',[] );
-demoapp.config("simpleController", function ($scope){
+demoapp.controller("simpleController", function ($scope){
 $scope.customers=[
 				{name:'John Smith',city:'Pheonix'},
 				{name:'John Doe',city:'San Francisco'},
